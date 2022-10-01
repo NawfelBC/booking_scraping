@@ -59,4 +59,4 @@ for URL in URLS:
             "update_at": datetime.datetime.now()
         }
 
-        client["booking"]["output_data"].update_many({"url": data['url']}, {"$set": data}, upsert=True) 
+    client["booking"]["output_data"].update_many({"url": data['url']}, {"$set": data}, upsert=True) 
